@@ -67,6 +67,7 @@
     });
 
     function validate(container) {
+        const validatePhoneRegex = /^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$/g;
         container.onclick = e => {
             switch (e.target.name) {
                 case 'phone':
@@ -87,7 +88,7 @@
                                 e.target.style.borderBottom = defaultBorder;
                                 e.target.parentNode.style.color = 'transparent';
                             } else {
-                                if (!/^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$/g.test(e.target.value)) {
+                                if (!validatePhoneRegex.test(e.target.value)) {
                                     e.target.style.borderBottom = '1px solid red';
                                     e.target.style.backgroundImage = 'url(img/invalid.png)';
                                     e.target.parentNode.style.color = '#fff';
@@ -106,7 +107,7 @@
         container.onkeydown = (e) => {
             switch (e.target.name) {
                 case 'phone':
-                    if (e.target.value.length > 1 && !/^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$/g.test(e.target.value)) {
+                    if (e.target.value.length > 1 && !validatePhoneRegex.test(e.target.value)) {
                         e.target.parentNode.style.color = '#fff';
                         e.target.style.backgroundImage = 'url(img/invalid.png)';
                     } else {
