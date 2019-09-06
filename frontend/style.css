@@ -105,7 +105,6 @@ input[type="checkbox"] {
     cursor: pointer;
 }
 
-/* Hide the browser's default checkbox */
 .check input {
     position: absolute;
     opacity: 0;
@@ -114,7 +113,6 @@ input[type="checkbox"] {
     width: 0;
 }
 
-/* Create a custom checkbox */
 .checkmark {
     display: inline-block;
     position: relative;
@@ -455,19 +453,6 @@ body {
 
 .first__right__send-container {
     text-align: center;
-}
-
-.first__right__left {
-    /* float: left;
-    margin-top: 36px;
-    max-width: 52%; */
-}
-
-.first__right__right {
-    /* float: right;
-    margin-top: 36px;
-    text-align: right;
-    max-width: 48%; */
 }
 
 .first__terms {
