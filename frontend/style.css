@@ -430,14 +430,15 @@ body {
     max-width: 700px;
     background-color: rgba(18, 49, 79, 0.8);
     padding-left: 70px;
-    padding-right: 30px;
+    padding-right: 70px;
     overflow-y: auto;
     overflow-x: hidden;
 }
 
 .first__right form {
-    max-width: 100%;
+    max-width: 700px;
     min-height: 265px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -449,10 +450,6 @@ body {
     flex-basis: 200px;
     box-sizing: border-box;
     padding-top: 35px;
-}
-
-.first__right__send-container {
-    text-align: center;
 }
 
 .first__terms {
@@ -503,4 +500,138 @@ body {
 
 .show-modal-button {
     margin-top: 35px;
+}
+
+@media (max-width: 1220px) {
+    .info {
+        background-image: none;
+    }
+}
+
+@media (max-width: 1220px) and (min-width: 899px) {
+    .container {
+        width: 80%;
+    }
+
+    .first__left,
+    .first__right {
+        max-width: 100%;
+        width: 100%;
+    }
+    
+    .first__left {
+        height: auto;
+    }
+}
+
+@media (min-width: 901px) {
+    .first__right form>div:nth-child(2n) {
+        text-align: right;
+    }
+}
+
+@media (max-width: 900px) and (min-width: 599px) {
+    .container {
+        width: 80%;
+    }
+
+    .first__form-card {
+        text-align: center;
+    }
+
+    .first__left,
+    .first__right {
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
+    
+    .first__left {
+        float: none;
+        display: inline-block;
+    }
+    
+    .first__right {
+        float: none;
+        padding-bottom: 50px;
+    }
+
+    .first__right form {
+        max-width: 300px;
+    }
+
+    .first__right form > div {
+        text-align: center;
+    }
+
+    .first__right form>div input {
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px) and (max-width: 469px) {
+    .container {
+        width: 95%;
+    }
+
+    .first__form-card {
+        text-align: center;
+    }
+}
+
+@media (max-width: 600px) and (max-width: 700px) {
+    .container {
+        width: 95%;
+    }
+
+    .first__left img {
+        width: 95%;
+    }
+
+    .first__left,
+    .first__right {
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    .first__left {
+        float: none;
+        display: inline-block;
+    }
+    
+    .first__right {
+        float: none;
+        padding-bottom: 20px;
+    }
+
+    .first__right form {
+        max-width: 300px;
+    }
+
+    .first__right form > div {
+        text-align: center;
+    }
+
+    .first__right form>div input {
+        width: 100%;
+    }
+
+    h1,
+    .first__title {
+        font-size: 30px;
+    }
+
+    .first__subtitle {
+        font-size: 23px;
+    }
+
+    h2,
+    .info__title {
+        font-size: 23px;
+    }
 }
