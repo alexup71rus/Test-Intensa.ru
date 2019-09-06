@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home</title>
+    <link rel="apple-touch-icon" sizes="60x60" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#2b5797">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/42b515dd27.js"></script>
+</head>
+<body>
+    <div class="modal">
+        <div class="modal__container">
+            <div class="modal__header">
+                <button id="modal__close" class="fas fa-times"></button>
+            </div>
+            <div class="modal__container__content">
+                <h3 class="modal__title">Оставьте заявку и мы с вами свяжемся!</h3>
+                <form action="" method="post" name="modal" class="modal__form">
+                    <label for="phone" class="phone__warning"><input type="tel" name="phone" id="phone" placeholder="Телефон" required>Номер заполнен не полностью</label>
+                    <input type="text" name="time" id="time" placeholder="Удобное время для связи" required>
+                    <div class="modal__bottom">
+                        <label class="check modal__terms">
+                            <input type="checkbox" id="terms" required>
+                            <span class="checkmark"></span>
+                            <span class="chechbox__content">Согласен с <a href="/">политикой конфиденциальности</a></span>
+                        </label>
+                        <input type="submit" name="btn" id="send-request" class="send-request" value="Заказать звонок">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <header class="header">
+        <div class="container clearfix">
+            <div class="header__left">
+                <a href="/" class="header__logo">
+                    <img src="img/logo.png" alt="logo">
+                </a>
+            </div>
+            <div class="header__right">
+                <a href="tel:88001007359" class="header__phone">8 (800) 100-73-59</a>
+                <div class="header__phone-description">звонок по России бесплатный</div>
+            </div>
+        </div>
+    </header>
+
+    <section class="first">
+        <div class="container">
+            <h1 class="first__title">Интеграция Виртуальной<br>АТС &nbsp;и 1C Рарус (софтфон)</h1>
+            <p class="first__subtitle">2 месяца бесплатного обслуживания</p>
+            <div class="first__form-card clearfix">
+                <div class="first__left">
+                    <img src="img/header-block-image.png" alt="title image">
+                    <div class="first__content">
+                        <h3 class="first__entry-title-left">Интеграция 1С Рарус с телефонией – прорыв для вашего бизнеса</h3>
+                        <div class="first__entry-descr">
+                            <p>От вас – только согласие. Мы реализуем интеграцию и все настроим сами.</p>
+                            <p>Персональный менеджер ответит на все ваши вопросы и проконсультирует по изменениям в сервисе.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="first__right">
+                    <h3 class="first__entry-title-right">Вам это интересно?<br>Хотите узнать больше или присоединиться?</h3>
+                    <form action="/" method="post" class="clearfix">
+                        <div>
+                            <label for="" class="phone__warning"><input type="tel" name="phone" id="phone" placeholder="Телефон" required>Номер заполнен не полностью</label>
+                        </div>
+                        <div>
+                            <input type="text" name="time" id="time" placeholder="Удобное время для связи" required>
+                        </div>
+                        <div>
+                            <div class="first__terms">Нажимая кнопку «Заказать звонок», я соглашаюсь с условиями <a href="/" target="_blank"
+                                    rel="noopener noreferrer">политики конфиденциальности</a></div>
+                        </div>
+                        <div class="first__right__send-container">
+                            <button class="send-request">Заказать звонок</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="info">
+        <div class="container">
+            <div class="info__container-text">
+                <h2 class="info__title">Компания, оснащенная системой 1С&nbsp;Рарус, получит немало преимуществ при использовании Виртуальной АТС:</h2>
+                <div class="info__content">
+                    <div class="text-block">
+                        <h3>Управляйте качеством общения посредством телефонии</h3>
+                        <p>Прослушивание записи разговора прямо из «1С:Предприятие» благодаря интеграции, легкий разбор конфликтных ситуаций и
+                            жалоб клиентов.</p>
+                    </div>
+                    <div class="text-block">
+                        <h3>Анализируйте статистику всех поступающих звонков</h3>
+                        <p>Информация о длительности и количестве звонков по дням/неделям, в том числе количестве пропущенных звонков</p>
+                    </div>
+                    <div class="text-block">
+                        <h3>Помогите более эффективно работать сотрудникам, использующим виртуальную телефонию</h3>
+                        <h4 class="middle-bold">Интеграция телефонии с Рарус – это:</h4>
+                        <ul>
+                            <li>Удобный набор номера клиента, сотрудника и диспетчеризация звонка в один клик.</li>
+                            <li>Автоматическое переключение клиента на нужного сотрудника на основе данных из «1С:Предприятие».</li>
+                            <li>Владение сотрудником информации о том, какой клиент и по какому поводу обращается.</li>
+                        </ul>
+                    </div>
+                    <div class="text-block">
+                        <h3>Не теряйте ни одного звонка</h3>
+                        <p>Автоматическая фиксация факта звонка и регистрация нового телефонного номера в «1С:Предприятие».</p>
+                    </div>
+                    <div class="text-block">
+                        <h3>Работайте со звонками</h3>
+                        <p>Простой контроль дальнейшей обработки звонка в «1С:Предприятие» после его фиксации.</p>
+                    </div>
+                    <div class="text-block">
+                        <h3>Сократите время на обслуживание клиентов</h3>
+                        <p>Увеличение числа обрабатываемых входящих звонков.</p>
+                    </div>
+                    <h4 class="entery-title">Вот что даст совместное решение и 1С-Рарус (софтфон)<br>Попробуйте!</h4>
+                    <button class="send-request show-modal-button">Оставить заявку</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="js/main.js"></script>
+</body>
+</html>
